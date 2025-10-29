@@ -1,0 +1,32 @@
+Kuve is a next-generation classifieds marketplace for Africa, designed to empower informal sellers with AI-powered storefronts, smart logistics, payments, and embedded financial tools. We solve the broken discovery, delivery, and trust issues limiting trade in Africa’s $100B+ informal economy. 
+Kuve is building the rails for trusted, intelligent, and inclusive commerce across Africa.
+
+Our ecosystem includes Kuve Express, Kuve POS, Kuve Lend.
+
+We empower individuals, vendors, and SMEs to buy, sell, deliver, and grow online and offline with powerful tools built for Africa's realities.
+
+Our Products
+
+Kuve Marketplace: 
+An AI-powered classifieds platform with verified profiles, smart pricing, escrow payments, and premium seller tools like storefronts and intelligent dashboard.
+
+Kuve POS:
+Unifies online and offline sales for sellers of all sizes, tracks in-store and online transactions, syncs inventory, and delivers real-time sales insights on seller's dashboard.
+
+Kuve Express (API + SaaS):
+A logistics engine for SMEs: Features route optimization, order matching, delivery tracking, and partner management, accessible via API or dashboard with multi tenant architecture for micro logistic partners.
+
+Kuve Credit Lending:
+AI-powered credit scoring based on real-time marketplace, POS, and logistics activity empowering working capital loans for merchants and delivery partners.
+
+AI-Powered Infrastructure:
+AI drives every layer of Kuve from fraud detection and pricing intelligence to seller ranking, credit scoring, and inventory forecasting.
+
+Our Mission
+To power Africa’s modern trade infrastructure by building a platform where commerce is secure, intelligent, and fully connected, online and offline.
+
+Security isn’t a feature, it’s the foundation.
+Offline transactions aren't left out, they're fully integrated.
+Logistics isn’t tacked on, it’s built-in.
+Credit for SMEs isn’t an afterthought, it’s embedded.
+AI isn’t just smart, it runs the entire engine.
