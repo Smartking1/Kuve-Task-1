@@ -59,7 +59,7 @@ def main():
     """
     # Title and description
     st.title(f"🤖 {CHATBOT_NAME}")
-    st.markdown(f"*Your {DOMAIN} Assistant powered by LangChain + Groq*")
+    st.markdown(f"*Your {DOMAIN} Assistant powered by Kuve*")
     
     # Initialize chatbot
     chatbot, rag_enabled = initialize_chatbot()
