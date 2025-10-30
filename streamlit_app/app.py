@@ -37,22 +37,6 @@ def initialize_chatbot():
     return chatbot, rag_enabled
 
 
-def display_source_documents(source_docs):
-    """
-    Display source documents in expandable sections
-    
-    Args:
-        source_docs: List of source documents
-    """
-    if source_docs:
-        with st.expander("📚 View Source Documents"):
-            for i, doc in enumerate(source_docs, 1):
-                st.markdown(f"**Source {i}**")
-                st.markdown(f"*File: {doc.metadata.get('source', 'Unknown')}*")
-                st.text(doc.page_content[:300] + "..." if len(doc.page_content) > 300 else doc.page_content)
-                st.divider()
-
-
 def main():
     """
     Main Streamlit application
@@ -123,10 +107,6 @@ def main():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
             
-            # Show source documents if available
-            if message["role"] == "assistant" and "sources" in message:
-                display_source_documents(message["sources"])
-    
     # Chat input
     if prompt := st.chat_input("Ask me anything..."):
         # Add user message to chat
@@ -145,22 +125,11 @@ def main():
                 message_placeholder.markdown(full_response + "▌")
             
             message_placeholder.markdown(full_response)
-            
-            # Get source documents if RAG is enabled
-            source_docs = []
-            if rag_enabled:
-                # Get the full result to extract sources
-                result = chatbot.chat(prompt)
-                source_docs = result.get('source_documents', [])
-                
-                # Display sources
-                display_source_documents(source_docs)
         
         # Add assistant response to chat
         st.session_state.messages.append({
             "role": "assistant",
-            "content": full_response,
-            "sources": source_docs
+            "content": full_response
         })
 
 
